@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首页推荐位边框颜色 -->
+    <color name="layer_middle_border">#7FFFFFFF</color>
+    <color name="layer_bottom_border">#33000000</color>
+</resources>

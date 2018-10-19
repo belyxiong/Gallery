@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.koolsee.gallery.widget.BorderImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recommend_img" />

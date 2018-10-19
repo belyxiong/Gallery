@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_frame_layout"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    android:background="#221934">
+
+    <FrameLayout style="@style/home_middle_layout">
+        <LinearLayout
+            style="@style/home_gallery_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <com.koolsee.gallery.widget.GalleryFlow
+                android:id="@+id/home_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:spacing="0dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                style="@style/home_recommend_name"
+                android:id="@+id/home_recommend_name"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:id="@+id/layer_top_bg"
+                style="@style/home_gallery_layer_top"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button style="@style/home_button"
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onAddBtnClicked"
+            android:text="@string/button_text" />
+        <Button style="@style/home_button"
+            android:id="@+id/btn_showmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onDisplayModeClicked"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/button_grid" />
+
+        <CheckBox
+            android:id="@+id/checkBox_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:onClick="onPasswdClicked"
+            android:text="@string/needpass" />
+    </LinearLayout>
+</LinearLayout>

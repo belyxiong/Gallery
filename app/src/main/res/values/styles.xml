@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 画廊版首页相关样式 start -->
+    <!-- 首页大框架显示分辨率1280 * 720 -->
+    <style name="home_frame_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="home_middle_layout">
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">600dp</item>
+    </style>
+    <style name="home_gallery_layout">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">51dp</item>
+        <item name="android:paddingTop">39dp</item>
+    </style>
+    <style
+        name="home_recommend_name"
+        parent="android:Widget.TextView">
+        <item name="android:background">@drawable/layer_name</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">27dp</item>
+        <item name="android:layout_width">569dp</item>
+        <item name="android:layout_height">51dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="home_gallery_layer_top">
+        <item name="android:layout_width">654dp</item>
+        <item name="android:layout_height">600dp</item>
+    </style>
+    <!-- gallery图片默认大小 -->
+    <integer-array name="gallery_img_layout_params">
+        <item>398</item>
+        <item>600</item>
+    </integer-array>
+    <integer name="gallery_scale">10</integer>
+    <!-- 画廊版首页相关样式 end -->
+    <style
+        name="home_detail"
+        parent="android:Widget.TextView">
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+    <style
+        name="home_button"
+        parent="android:Widget.Button">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
